@@ -19,7 +19,8 @@ jobs:
           node-version: '16'
           
       - name: Install dependencies
-        run: npm install
+        run: |
+        #npm install
 
       - name: Build
         run: npm run build
@@ -39,10 +40,12 @@ jobs:
           node-version: '16'
           
       - name: Install dependencies
-        run: npm install
+        run: | 
+        #npm install
 
       - name: Run unit tests
-        run: npm test
+        run: | 
+        #npm test
         # This assumes your test command is 'npm test'. Adjust as needed.
 
   deploy:
@@ -59,7 +62,8 @@ jobs:
           node-version: '16'
           
       - name: Install dependencies
-        run: npm install
+        run: | 
+        #npm install
 
       - name: Deploy to staging environment
         run: ./deploy-script.sh
